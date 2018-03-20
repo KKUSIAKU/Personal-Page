@@ -20,7 +20,7 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   entry: {
-    app: "./src/index.js",
+    app: "./src/App.js",
   },
   module: {
     rules: [
