@@ -2,6 +2,12 @@ import React from "react";
 
 const text = " It has survived not only five centuries, but also the leap into electronic";
 
+const WEBDEV = "I provide full web development, from scratch, to build an application that matchs unique needs.";
+
+const RESPONSIVE = " I build a website that adapts to the viewer media using great open-source tools";
+
+const ACCESSIBILITY  = "Accessibility is at the heart of my work from the the start. I assure a project matchs the latest ARIA  recommendations";
+
 const Section = ({ header, description, icon }) => (
   <section className="skill-section">
     <div className="skill-section-icon">
@@ -24,16 +30,16 @@ const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="skill-section-item col-md-6 col-lg-4">
-            <Section header="DEVELOPMENT" description={text}
+            <Section header="DEVELOPMENT" description={WEBDEV}
               icon="../../images/svg_test_web.svg" />
           </div>
           <div className=" skill-section-item col-md-6 col-lg-4">
             <Section header="RESPONSIVE"
-              description="By using bootstrap or handcoded CSS, I ensure most projects work cross device out of the box"
+              description = {RESPONSIVE}
               icon="../../images/responsive_copy.svg" />
           </div>
           <div className="skill-section-item col-md-6 col-lg-4">
-            <Section header="ACCESSIBILITY" description={text}
+            <Section header="ACCESSIBILITY" description={ACCESSIBILITY}
               icon="../../images/svg_test_web.svg" />
           </div>
         </div>
