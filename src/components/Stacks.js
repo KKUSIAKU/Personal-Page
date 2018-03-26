@@ -17,9 +17,10 @@ const STACK_REGISTRY = [
 ];
 
 const messages = [
-  "I work with and I possess grounded expertise on these technologies",
-  "I work with and I possess grounded expertise on these technologies 2",
-  "I work with and I possess grounded expertise on these technologies 3",
+  "I built website with the latest technologies that offer great performance and flexibility.",
+  "Every project is specific. That is why I work hard to achieve customised website.",
+  "My tech stack is JavaScript focused on both Back End and Front End sides.",
+  "Looking to increase your team to handle temporary work load or long term collaborator, Drop me a line for a chat!"
 ];
 
 const StackItem = ({ name, icon }) => (

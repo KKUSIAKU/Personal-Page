@@ -12,7 +12,7 @@ class Announces extends React.Component {
       textIndex: null,
       numberOfMessasge: 0
     };
-    this.time = 3000;
+    this.time = 10000;
     this.timer;
     this.numberOfMessasge = this.props.messages.length;
 
