@@ -6,20 +6,28 @@ const WEBDEV = "I provide full web development, from scratch, to build an applic
 
 const RESPONSIVE = " I build a website that adapts to the viewer media using great open-source tools";
 
-const ACCESSIBILITY  = "Accessibility is at the heart of my work from the the start. I assure a project matchs the latest ARIA  recommendations";
+const ACCESSIBILITY = "Accessibility is at the heart of my work from the the start. I assure a project matchs the latest ARIA  recommendations";
+
+const SKILLS_LIST = [
+  { header: "DEVELOPMENT", description: WEBDEV, icon: "../../images/svg_test_web.svg" },
+  { header: "RESPONSIVE", description: RESPONSIVE, icon: "../../images/svg_test_web.svg" },
+  { header: "ACCESSIBILITY", description: ACCESSIBILITY, icon: "../../images/svg_test_web.svg" }
+];
 
 const Section = ({ header, description, icon }) => (
-  <section className="skill-section">
-    <div className="skill-section-icon">
-      <img src={icon} alt="service-icon" />
-    </div>
-    <div className="skill-section-header">
-      <h3>{header}</h3>
-    </div>
-    <article className="skill-section-description">
-      <p>{description}</p>
-    </article>
-  </section>
+  <div className='card my-2 p-0'>
+    <section className="card-body skill-section">
+      <div className="card-img-top d-flex justify-content-center py-3">
+        <img src={icon} alt="service-icon" />
+      </div>
+      <div className="card-title d-flex justify-content-center ">
+        <h3>{header}</h3>
+      </div>
+      <article className="card-text skill-section-description d-flex justify-content-center px-4">
+        <p className="text-center" >{description}</p>
+      </article>
+    </section>
+  </div>
 );
 
 const Skills = () => {
@@ -28,20 +36,8 @@ const Skills = () => {
       <h2 className="section-title">MY SERVICES</h2>
       <p className="skill-section-annonce">Your web application avalaible on any platform regardless its size</p>
       <div className="container">
-        <div className="row">
-          <div className="skill-section-item col-md-6 col-lg-4">
-            <Section header="DEVELOPMENT" description={WEBDEV}
-              icon="../../images/svg_test_web.svg" />
-          </div>
-          <div className=" skill-section-item col-md-6 col-lg-4">
-            <Section header="RESPONSIVE"
-              description = {RESPONSIVE}
-              icon="../../images/responsive_copy.svg" />
-          </div>
-          <div className="skill-section-item col-md-6 col-lg-4">
-            <Section header="ACCESSIBILITY" description={ACCESSIBILITY}
-              icon="../../images/svg_test_web.svg" />
-          </div>
+        <div className="card-deck justify-content-center">
+          { SKILLS_LIST.map(skill => <Section {...skill} key={skill.header}/>)}
         </div>
       </div>
     </section >
@@ -50,3 +46,19 @@ const Skills = () => {
 
 export default Skills;
 
+/*
+
+  <div className='card p-0'>
+    <section className="card-body skill-section">
+      <div className="card-img-top skill-section-icon">
+        <img src={icon} alt="service-icon" />
+      </div>
+      <div className="card-title skill-section-header">
+        <h3>{header}</h3>
+      </div>
+      <article className="card-text skill-section-description">
+        <p>{description}</p>
+      </article>
+    </section>
+  </div>
+*/
