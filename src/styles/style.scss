@@ -3,15 +3,24 @@ body{
   background-color:rgb(221, 221, 221);
 }
 
+.card{
+  max-width: 350px;
+  min-width: 350px;
+}
+
 #about{
   background-image:url("../../images/background.png"); 
   background-size:cover;
   overflow-y: hidden;
 }
 
+.about-container{
+  max-width: 700px;
+}
+
 .about-intro{
   color:rgba(255,255,255,0.8);
-  font-size:2rem; 
+  font-size:20px; 
 }
 .about-wrapper{
   background:rgba(0, 17, 25,0.8);
@@ -207,14 +216,9 @@ body{
   padding: 2em;
 }
 
-.skill-section-item {
-  box-sizing: border-box;
-  margin-bottom:15px;
-}
 .skill-section-description{
   letter-spacing:1px;
   line-height: 2rem;
-  padding:1.3rem;
 }
 
 .skill-section-text{
@@ -322,9 +326,10 @@ body{
 }
 
 #title{
-  font-family: Avenir,Arial,Helvetica,sans-serif;
   color: rgb(255,255,255);
-  font-size:5rem; 
+  font-family: Avenir,Arial,Helvetica,sans-serif;
+  font-size:3rem; 
+  //text-align: center !important;// need to set it as bootstrap doesn't do the job on small screen
 }
 /*@media (max-width:765px){
   .container{
@@ -348,10 +353,7 @@ body{
     flex-wrap: wrap;
   }
 
-  #title{
-    font-size:3rem; 
-  }
-  
+ 
 }
 
 @media screen and (max-width:1000px) {
