@@ -36,7 +36,7 @@ const Skills = () => {
       <h2 className="section-title">MY SERVICES</h2>
       <p className="skill-section-annonce">Your web application avalaible on any platform regardless its size</p>
       <div className="container">
-        <div className="card-deck justify-content-center">
+        <div className="card-deck flex-row flex-wrap justify-content-center">
           { SKILLS_LIST.map(skill => <Section {...skill} key={skill.header}/>)}
         </div>
       </div>

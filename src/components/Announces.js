@@ -34,7 +34,8 @@ class Announces extends React.Component {
   initialiseState() {
     if (this.state.textIndex === null) {
       this.setState({
-        text: this.props.messages[0],
+
+        text: <span className="slideInLeft"> <Text text = {this.props.messages[0]}/></span>,
         textIndex: 0,
       });
     }
@@ -47,13 +48,13 @@ class Announces extends React.Component {
       index = parseInt(this.state.textIndex);
       if (index < this.numberOfMessasge - 1) {
         this.setState({
-          text: this.props.messages[index + 1],
+          text: <span className="slideInLeft"> <Text text = {this.props.messages[index + 1]}/></span>,
           textIndex: index + 1
         });
       }
       else {
         this.setState({
-          text: this.props.messages[0],
+          text: <span className="slideInLeft"> <Text text = {this.props.messages[0]}/></span>,
           textIndex: 0
         });
       }
@@ -80,7 +81,7 @@ class Announces extends React.Component {
   render() {
     return (
       <div>
-        <Text text={this.state.text} />
+        {this.state.text}
       </div>
     );
   }
