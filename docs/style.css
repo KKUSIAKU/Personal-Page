@@ -239,12 +239,12 @@ body {
   min-height: 400px; }
 
 .stack-introduction {
-  display: flex;
-  font-size: 20px;
-  line-height: 2.5rem;
-  letter-spacing: 1px; }
+  display: flex; }
 
 .stack-introduction-text {
+  font-size: 30px;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
   margin: auto; }
 
 .stack-item {
