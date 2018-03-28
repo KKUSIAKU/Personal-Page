@@ -4,8 +4,9 @@ import Announces from "./Announces.js";
 
 const PATH_ROOT = "https://cdn.rawgit.com/KokuKUSIAKU/HOME/master";
 
+
 const STACK_REGISTRY = [
-  { name: "HTML5", icon: { url: PATH_ROOT + "/images/javascript-plain.svg", alt: "html language icon" } },
+  { name: "HTML5", icon: { url: PATH_ROOT + "/images/hml5-plain.svg", alt: "html language icon" } },
   { name: "CSS3", icon: { url: PATH_ROOT + "/images/css3-plain.svg", alt: "CSS language icon" } },
   { name: "Bootstrap", icon: { url: PATH_ROOT + "/images/bootstrap-plain.svg?", alt: "Bootstrap framework icon" } },
   { name: "JavaScript", icon: { url: PATH_ROOT + "/images/javascript-plain.svg?sanitize=true", alt: "JavaScript language icon" } },
