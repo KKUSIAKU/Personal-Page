@@ -10,7 +10,7 @@ const STACK_REGISTRY = [
   { name: "Bootstrap", icon: { url: PATH_ROOT + "/images/bootstrap-plain.svg?", alt: "Bootstrap framework icon" } },
   { name: "JavaScript", icon: { url: PATH_ROOT + "/images/javascript-plain.svg?sanitize=true", alt: "JavaScript language icon" } },
   { name: "React", icon: { url: PATH_ROOT + "/images/react-original.svg", alt: "React framework icon" } },
-  { name: "Redux", icon: { url: PATH_ROOT + "/images/javascript-plain.svg", alt: "Redux framework icon" } },
+  { name: "Redux", icon: { url: PATH_ROOT + "/images/redux-plain.svg", alt: "Redux framework icon" } },
   { name: "Jasmine", icon: { url: PATH_ROOT + "/images/jasmine-plain.svg", alt: "Jasmine testing framework icon" } },
   { name: "Webpack", icon: { url: PATH_ROOT + "/images/webpack-plain.svg", alt: "Webpack tool icon" } },
   { name: "Git", icon: { url: PATH_ROOT + "/images/git-plain.svg", alt: "Git tool icon" } },
