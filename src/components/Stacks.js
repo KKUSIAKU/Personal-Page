@@ -20,12 +20,12 @@ const messages = [
   "I built website with the latest technologies that offer great performance and flexibility.",
   "Every project is specific. That is why I work hard to achieve customised website.",
   "My tech stack is JavaScript focused on both Back End and Front End sides.",
-  "Looking to increase your team to handle temporary work load or long term collaborator, Drop me a line for a chat!"
+  "Looking to increase your team to handle temporary work load or long term collaborator? Drop me a line for a chat!"
 ];
 
 const StackItem = ({ name, icon }) => (
-  <div className="stack-item">
-    <div className="stack-item-icon">
+  <div className="stack-item d-flex align-items-center border border-white">
+    <div className="stack-item-icon ">
       <img src={icon.url} alt={icon.alt} />
     </div>
     <div className="stack-item-name">
@@ -37,15 +37,15 @@ const StackItem = ({ name, icon }) => (
 const Stack = () => (
   <section id="stack" className="stack-background">
     <div className="stack-wrapper stack-background">
-      <div className="container">
-        <h2 className="section-title">My Stack </h2>
-        <div className="row">
-          <div className="stack-introduction col-md-4">
-            <span className="stack-introduction-text"><Announces messages = {messages}/></span>
+      <div className="container-fluid no-gutters p-0">
+        <h2 className="stack-title">My Stack </h2>
+        <div className="row m-0">
+          <div className="stack-introduction col-md-5">
+            <span className="stack-introduction-text "><Announces messages = {messages}/></span>
           </div>
-          <div className="stack-container col-md-8">
-            <div className="stack-list">
-              {STACK_REGISTRY.map((item, index) => <StackItem {...item} key={index} />)}
+          <div className="stack-container col-md-7">
+            <div className="stack-list row">
+              {STACK_REGISTRY.map((item, index) => <div className="col-sm-6 col-md-4 p-2 " key={index}><StackItem {...item}  /></div>)}
             </div>
           </div>
         </div>

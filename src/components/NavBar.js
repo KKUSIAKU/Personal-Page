@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => (
   <header className="page-header navbar-light bg-light fixed-top">
     <div id="page-header-container">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row row-border justify-content-between">
           <div className=" brand-container col-2 menu-border">
             <a href="#" className="navbar-brand">Koku KUSIAKU</a>
