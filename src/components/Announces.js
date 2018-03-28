@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 import Text from "./Text.js";
 
-
 class Announces extends React.Component {
   constructor(props) {
     super(props);
@@ -12,15 +11,15 @@ class Announces extends React.Component {
       textIndex: null,
       numberOfMessasge: 0
     };
-    this.time = 10000;
+    this.time = 8000;
     this.timer;
     this.numberOfMessasge = this.props.messages.length;
 
     this.changeStateText = this.changeStateText.bind(this);
     this.initialiseState = this.initialiseState.bind(this);
+    this.clearTextState = this.clearTextState.bind(this);
 
   }
-
 
   componentDidMount() {
     this.initialiseState();
@@ -35,7 +34,7 @@ class Announces extends React.Component {
     if (this.state.textIndex === null) {
       this.setState({
 
-        text: <span className="slideInLeft"> <Text text = {this.props.messages[0]}/></span>,
+        text: <div className="slideInLeft" value={0}> <Text text={this.props.messages[0]} /></div>,
         textIndex: 0,
       });
     }
@@ -43,21 +42,26 @@ class Announces extends React.Component {
 
   changeStateText() {
 
-    let index;
+    let ctx = this, index;
     try {
       index = parseInt(this.state.textIndex);
-      if (index < this.numberOfMessasge - 1) {
-        this.setState({
-          text: <span className="slideInLeft"> <Text text = {this.props.messages[index + 1]}/></span>,
-          textIndex: index + 1
+
+      Promise.resolve()
+        .then(() => ctx.clearTextState())
+        .then(() => {
+          if (index < ctx.numberOfMessasge - 1) {
+            ctx.setState({
+              text: <div className="slideInLeft" value={index}> <Text text={ctx.props.messages[index + 1]} /></div>,
+              textIndex: index + 1
+            });
+          }
+          else {
+            ctx.setState({
+              text: <div className="slideInLeft" value={0}> <Text text={ctx.props.messages[0]} /></div>,
+              textIndex: 0
+            });
+          }
         });
-      }
-      else {
-        this.setState({
-          text: <span className="slideInLeft"> <Text text = {this.props.messages[0]}/></span>,
-          textIndex: 0
-        });
-      }
 
     } catch (e) {
       // set only default message here
@@ -74,6 +78,12 @@ class Announces extends React.Component {
     this.timer = setInterval(this.changeStateText, this.time);
   }
 
+  clearTextState() {
+    this.setState({
+      text: "",
+    });
+  }
+
   clearTimer() {
     clearTimeout(this.timer);
   }
@@ -88,7 +98,7 @@ class Announces extends React.Component {
 }
 
 Announces.propTypes = {
-  messages:PropTypes.arrayOf(PropTypes.string).isRequired
+  messages: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 
