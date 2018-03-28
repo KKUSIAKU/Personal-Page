@@ -260,7 +260,8 @@ body {
   width: 50px; }
 
 .stack-item-name {
-  color: #336699;
+  color: #2b2c2e;
+  font-size: 20px;
   margin-left: 5px; }
 
 .stack-list {
