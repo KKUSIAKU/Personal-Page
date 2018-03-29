@@ -3,10 +3,7 @@ body{
   background-color:rgb(221, 221, 221);
 }
 
-.card{
-  max-width: 350px;
-  min-width: 350px;
-}
+
 
 #about{
   background-image:url("../../images/background.png"); 
@@ -29,6 +26,12 @@ body{
 
 .bold1{
   font-weight: 700;
+}
+
+
+.card{
+  max-width: 350px;
+  min-width: 350px;
 }
 
 #contact{
@@ -183,7 +186,11 @@ body{
   position:absolute;
   left:50%;
   transform: translateX(-5rem);
+}
 
+.service-icon{
+  height: 100%;
+  width: 100%;
 }
 
 #skills{
@@ -202,13 +209,20 @@ body{
   padding:2rem;
 }
 
+
+.skill-section{
+ background-color:rgb(228, 228, 228);
+  padding:2em 0;
+}
+
 .skill-section-annonce{
   font-size:20px;
   text-align: center;
 }
-.skill-section{
- background-color:rgb(228, 228, 228);
-  padding:2em 0;
+
+.skill-section-description{
+  letter-spacing:1px;
+  line-height: 2rem;
 }
 
 .skill-section-illustration{
@@ -216,10 +230,11 @@ body{
   padding: 2em;
 }
 
-.skill-section-description{
-  letter-spacing:1px;
-  line-height: 2rem;
+.skill-section-image{
+  height: 150px;
 }
+
+
 
 .skill-section-text{
   background:linear-gradient( -70deg, #990066, #990066 10%, rgb(0, 102, 153) 10%, rgb(0, 102, 153) 90%, #669900 10%);
