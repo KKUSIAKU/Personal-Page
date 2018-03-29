@@ -2,10 +2,6 @@ body {
   font-family: Frank,Arial,Helvetica,sans-serif;
   background-color: #dddddd; }
 
-.card {
-  max-width: 350px;
-  min-width: 350px; }
-
 #about {
   background-image: url(8805d6c1829acc38e3ea1421d302cd58.png);
   background-size: cover;
@@ -24,6 +20,10 @@ body {
 
 .bold1 {
   font-weight: 700; }
+
+.card {
+  max-width: 350px;
+  min-width: 350px; }
 
 #contact {
   padding: 5em 0 0; }
@@ -162,6 +162,10 @@ body {
   left: 50%;
   transform: translateX(-5rem); }
 
+.service-icon {
+  height: 100%;
+  width: 100%; }
+
 #skills {
   background-color: white;
   box-sizing: border-box;
@@ -177,21 +181,24 @@ body {
   border-radius: 50%;
   padding: 2rem; }
 
+.skill-section {
+  background-color: #e4e4e4;
+  padding: 2em 0; }
+
 .skill-section-annonce {
   font-size: 20px;
   text-align: center; }
 
-.skill-section {
-  background-color: #e4e4e4;
-  padding: 2em 0; }
+.skill-section-description {
+  letter-spacing: 1px;
+  line-height: 2rem; }
 
 .skill-section-illustration {
   width: 40% !important;
   padding: 2em; }
 
-.skill-section-description {
-  letter-spacing: 1px;
-  line-height: 2rem; }
+.skill-section-image {
+  height: 150px; }
 
 .skill-section-text {
   background: linear-gradient(-70deg, #990066, #990066 10%, #006699 10%, #006699 90%, #669900 10%);

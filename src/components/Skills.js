@@ -1,5 +1,7 @@
 import React from "react";
 
+const PATH_ROOT = "https://cdn.rawgit.com/KKUSIAKU/Personal-Page/master";
+
 const text = " It has survived not only five centuries, but also the leap into electronic";
 
 const WEBDEV = "I provide full web development, from scratch, to build an application that matchs unique needs.";
@@ -9,16 +11,16 @@ const RESPONSIVE = " I build a website that adapts to the viewer media using gre
 const ACCESSIBILITY = "Accessibility is at the heart of my work from the the start. I assure a project matchs the latest ARIA  recommendations";
 
 const SKILLS_LIST = [
-  { header: "DEVELOPMENT", description: WEBDEV, icon: "../../images/svg_test_web.svg" },
-  { header: "RESPONSIVE", description: RESPONSIVE, icon: "../../images/svg_test_web.svg" },
-  { header: "ACCESSIBILITY", description: ACCESSIBILITY, icon: "../../images/svg_test_web.svg" }
+  { header: "DEVELOPMENT", description: WEBDEV, icon: "/images/code-icon.svg" },
+  { header: "RESPONSIVE", description: RESPONSIVE, icon: "/images/responsive-web-icon.svg" },
+  { header: "ACCESSIBILITY", description: ACCESSIBILITY, icon: "/images/accessibility-icon.svg" }
 ];
 
 const Section = ({ header, description, icon }) => (
   <div className='card my-2 p-0'>
     <section className="card-body skill-section">
-      <div className="card-img-top d-flex justify-content-center py-3">
-        <img src={icon} alt="service-icon" />
+      <div className="card-img-top skill-section-image d-flex justify-content-center py-2">
+        <img className ="service-icon" src={PATH_ROOT + icon} alt="service-icon" />
       </div>
       <div className="card-title d-flex justify-content-center ">
         <h3>{header}</h3>
