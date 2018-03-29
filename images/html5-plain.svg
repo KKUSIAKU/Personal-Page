@@ -9,11 +9,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 128 128"
    version="1.1"
-   id="svg6494"
-   sodipodi:docname="html5-plain-2.svg"
+   id="svg5193"
+   sodipodi:docname="html5-plain.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata6500">
+     id="metadata5199">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -24,7 +24,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6498" />
+     id="defs5197" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,18 +36,18 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
-     id="namedview6496"
+     id="namedview5195"
      showgrid="false"
-     inkscape:zoom="1.84375"
-     inkscape:cx="-25.220339"
-     inkscape:cy="64"
+     inkscape:zoom="3.15625"
+     inkscape:cx="-30.543683"
+     inkscape:cy="68.794971"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg6494" />
+     inkscape:current-layer="svg5193" />
   <path
-     d="M 101.14773,38.543237 H 48.482729 l 1.257,14 h 50.156 l -0.336,3.471 -3.233,36.119 -0.238,2.27 -28.196,7.748993 v 0.002 l -0.034,0.018 -28.177,-7.422993 -1.913,-21.206 h 13.815 l 0.979,10.919 15.287,4.081 h 0.043 v -0.546 l 15.355,-3.875 1.604,-17.579 h -47.698 l -3.383,-38.117 -0.329,-3.883 h 68.939001 l -0.33,3.539 z"
-     id="path6492"
-     inkscape:connector-curvature="0"
-     style="fill:#3c6cb4;fill-opacity:1" />
+     fill="#E44D26"
+     d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387 10.015-112.107h-109.936zm89.126 26.539l-.627 7.172-.276 3.289h-52.665000000000006l1.257 14h50.156000000000006l-.336 3.471-3.233 36.119-.238 2.27-28.196 7.749v.002l-.034.018-28.177-7.423-1.913-21.206h13.815000000000001l.979 10.919 15.287 4.081h.043v-.546l15.355-3.875 1.604-17.579h-47.698l-3.383-38.117-.329-3.883h68.939l-.33 3.539z"
+     id="path5191"
+     style="fill:#ff0026;fill-opacity:1" />
 </svg>

@@ -2,7 +2,7 @@ import React from "react";
 import Announces from "./Announces.js";
 
 
-const PATH_ROOT = "https://cdn.rawgit.com/KokuKUSIAKU/HOME/master";
+const PATH_ROOT = "https://cdn.rawgit.com/KKUSIAKU/Personal-Page/master";
 
 
 const STACK_REGISTRY = [
