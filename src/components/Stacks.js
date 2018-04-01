@@ -38,9 +38,9 @@ const StackItem = ({ name, icon }) => (
 const Stack = () => (
   <section id="stack" className="">
     <h2 className=" section-title">My Stack </h2>
-    <div className="stack-wrapper  stack-background p-0 ">
+    <div className="stack-wrapper d-flex p-0 ">
       <div className="container-fluid no-gutters p-0">
-        <div className="row align-items-center m-0">
+        <div className="row align-self-stretch align-items-center m-0">
           <div className="stack-introduction col-md-5  align-self-stretch">
             <div className="stack-introduction-text d-flex align-items-center h-100"><Announces messages={messages} /></div>
           </div>
