@@ -36,17 +36,17 @@ const StackItem = ({ name, icon }) => (
 );
 
 const Stack = () => (
-  <section id="stack" className="stack-background">
-    <div className="stack-wrapper stack-background">
+  <section id="stack" className="">
+    <h2 className=" section-title">My Stack </h2>
+    <div className="stack-wrapper d-flex p-0 ">
       <div className="container-fluid no-gutters p-0">
-        <h2 className="stack-title">My Stack </h2>
-        <div className="row m-0">
-          <div className="stack-introduction col-md-5">
-            <span className="stack-introduction-text "><Announces messages = {messages}/></span>
+        <div className="row align-self-stretch align-items-center m-0">
+          <div className="stack-introduction col-md-5  align-self-stretch">
+            <div className="stack-introduction-text d-flex align-items-center h-100"><Announces messages={messages} /></div>
           </div>
-          <div className="stack-container col-md-7">
+          <div className="stack-container  col-md-7 h-100">
             <div className="stack-list row">
-              {STACK_REGISTRY.map((item, index) => <div className="col-sm-6 col-md-4 p-2 " key={index}><StackItem {...item}  /></div>)}
+              {STACK_REGISTRY.map((item, index) => <div className="col-sm-6 col-md-4 p-2 " key={index}><StackItem {...item} /></div>)}
             </div>
           </div>
         </div>

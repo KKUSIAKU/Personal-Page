@@ -1,6 +1,5 @@
 body {
-  font-family: Frank,Arial,Helvetica,sans-serif;
-  background-color: #dddddd; }
+  font-family: Frank,Arial,Helvetica,sans-serif; }
 
 #about {
   background-image: url(8805d6c1829acc38e3ea1421d302cd58.png);
@@ -237,15 +236,20 @@ body {
   flex-wrap: wrap-reverse; }
 
 #stack {
+  /* background-image:url("../../images/stack_background.jpeg"); 
+  background-size:  cover; 
+  background-repeat:no-repeat; 
+  background-attachment: fixed; */ }
+
+.stack-background {
   background-image: url(9aada194a85f5bbad2f0730bad8e3b1d.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
-
-.stack-background {
+  background-attachment: fixed;
   min-height: 400px; }
 
 .stack-introduction {
+  background-color: rgba(68, 108, 180, 0.8);
   display: flex; }
 
 .stack-introduction-text {
@@ -277,19 +281,18 @@ body {
   padding: 5em 2em; }
 
 .stack-title {
-  background-color: rgba(132, 132, 132, 0.85);
+  /*background-color:rgba(132, 132, 132,0.85);*/
+  /*
   font-family: Avenir,Arial,Helvetica,sans-serif;
   font-weight: 500;
-  padding-top: 1em;
+  padding-top:1em;
   padding-bottom: 1em;
   text-align: center;
-  text-align: center; }
+  text-align: center;*/ }
 
 .stack-wrapper {
-  color: white;
-  background-color: rgba(132, 132, 132, 0.5);
-  padding-bottom: 5em;
-  height: 100%; }
+  background-color: #d8dbde;
+  color: white; }
 
 .tech-stack {
   padding-bottom: 5em; }
