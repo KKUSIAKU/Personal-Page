@@ -1,6 +1,6 @@
 body{
   font-family: Frank,Arial,Helvetica,sans-serif;
-  background-color:rgb(221, 221, 221);
+ // background-color:rgb(221, 221, 221);
 }
 
 
@@ -276,17 +276,22 @@ body{
 }
 
 #stack{
-  background-image:url("../../images/stack_background.jpeg"); 
+ /* background-image:url("../../images/stack_background.jpeg"); 
   background-size:  cover; 
   background-repeat:no-repeat; 
-  background-attachment: fixed; 
+  background-attachment: fixed; */
 }
 
 .stack-background{
+  background-image:url("../../images/stack_background.jpeg"); 
+  background-size:cover; 
+  background-repeat:no-repeat; 
+  background-attachment: fixed; 
   min-height: 400px;
 }
 
 .stack-introduction {
+  background-color:rgba(68, 108, 180,0.8);
   display: flex; 
 }
 
@@ -330,20 +335,18 @@ body{
 }
 
 .stack-title{
-  background-color:rgba(132, 132, 132,0.85);
- 
+  /*background-color:rgba(132, 132, 132,0.85);*/
+ /*
   font-family: Avenir,Arial,Helvetica,sans-serif;
   font-weight: 500;
   padding-top:1em;
   padding-bottom: 1em;
   text-align: center;
-  text-align: center;
+  text-align: center;*/
 }
 .stack-wrapper{
   color:rgb(255,255,255);
-  background-color:rgba(132, 132, 132,0.5);
-  padding-bottom:5em; 
-  height: 100%;
+ ;
 }
 
 .tech-stack {

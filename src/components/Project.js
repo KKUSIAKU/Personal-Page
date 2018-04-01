@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Project = (props) => {
   return (
-    <div className="project col-md-4">
+    <div className="project">
       <div className="project-image">
         <img className="fullwidth-img" src={props.project.image} alt="" />
       </div>

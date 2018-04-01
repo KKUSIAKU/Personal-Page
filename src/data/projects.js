@@ -19,8 +19,8 @@ const projects = [
     name: "Calculator",
     description:"Build following MVC pattern with no framework or libary",
     image: "https://github.com/KokuKUSIAKU/HOME/blob/master/images/JS_Calculator_.png?raw=true",
-    pageLink:"https://kokukusiaku.github.io/JS-Calculator/",
-    codeLink:"https://github.com/KokuKUSIAKU/React-Redux-Express-App"
+    pageLink:"https://kkusiaku.github.io/numericalcalculator/",
+    codeLink:"https://github.com/KKUSIAKU/numericalcalculator"
   },
  
 ];
