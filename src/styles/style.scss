@@ -3,8 +3,6 @@ body{
  // background-color:rgb(221, 221, 221);
 }
 
-
-
 #about{
   background-image:url("../../images/background.png"); 
   background-size:cover;
@@ -19,6 +17,7 @@ body{
   color:rgba(255,255,255,0.8);
   font-size:20px; 
 }
+
 .about-wrapper{
   background:rgba(0, 17, 25,0.8);
   padding:15em 0; 
@@ -28,46 +27,55 @@ body{
   font-weight: 700;
 }
 
-
 .card{
   max-width: 350px;
   min-width: 350px;
 }
 
 #contact{
+  background-color: rgb(51, 51, 51);
   padding:5em 0 0;
 }
+
 .contact-container {
-  padding-bottom: 5em;
+ // padding-bottom: 5em;
 }
+
 .contact-icon{
   font-size:3em;
   color: rgb(0, 102, 153);
 }
 
 .contact-item{
-  border:0.2em solid rgb(0, 102, 153);
+ // border:0.2em solid rgb(0, 102, 153);
+ background:rgba(35, 35, 36, 0.65);
   border-radius: 0.1em;
-  flex-grow:1;
-  max-width: 300px;
+  flex-basis: 250px;
   text-align: center;
 }
+
 .contact-item-icon{
+  border-right:2px solid rgb(255,255,255);
   text-align: center; 
 }
 
 .contact-item-info {
-  background:rgb(255,255,255);
-}
-.contact-item-header{
-  font-size:1rem;
+ color:rgb(255,255,255);
 }
 
+.contact-item-header{
+  font-size:1rem;
+  font-weight: 800;
+}
+
+/*
 .contact-item-wrapper{
   justify-content: space-around;
 }
+
+*/
+
 .cop-right {
-  background-color: rgb(51, 51, 51);
   color:rgb(0, 102, 153);
   padding:2em; 
   text-align: center;
@@ -76,8 +84,7 @@ body{
 .fullwidth-img{
   width:100%;
   height:auto;
-  margin-bottom:0;
-  
+  margin-bottom:0;  
 }
 
 .navbar-brand{
@@ -88,6 +95,7 @@ body{
 .no-margin{
   margin: 0;
 }
+
 .no-padding{
   padding:0,
 }
@@ -374,12 +382,12 @@ body{
 @media screen and (max-width:1000px) {
 
   .contact-item{
-    width: 300px;
+   // width: 300px;
     margin:1rem auto; 
   }
 
   .contact-item-wrapper {
-    flex-direction: column
+   // flex-direction: column
    }
 
    .stack-item{

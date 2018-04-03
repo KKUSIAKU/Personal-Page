@@ -23,12 +23,12 @@ const LINKEDIN_CONTACT = {
 };
 
 const ContactItem = (props) => (
-  <div className={props.classNames}>
-    <div className="row no-gutters align-items-center">
-      <div className="col-3 contact-item-icon">
+  <div className={`${props.classNames} m-2 p-2`}>
+    <div className="d-flex ">
+      <div className="d-flex align-items-center justify-content-center contact-item-icon w-25 ">
         {props.icon}
       </div>
-      <div className="col-9 contact-item-info">
+      <div className="contact-item-info w-75">
         <h3 className="contact-item-header">{props.header}</h3>
         <p>{props.text}</p>
       </div>
@@ -48,8 +48,8 @@ ContactItem.prototype = {
 
 const Contact = () => (
   <footer id="contact">
-    <div className="container-fluid contact-container">
-      <div className="row  contact-item-wrapper">
+    <div className="contact-container">
+      <div className="d-flex flex-wrap justify-content-center">
         <ContactItem {...PHONE_CONTACT} />
         <ContactItem {...EMAIL_CONTACT} />
         <ContactItem {...LINKEDIN_CONTACT} />
