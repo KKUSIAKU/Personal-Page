@@ -1,6 +1,5 @@
 body{
   font-family: Frank,Arial,Helvetica,sans-serif;
- // background-color:rgb(221, 221, 221);
 }
 
 #about{
@@ -37,18 +36,13 @@ body{
   padding:5em 0 0;
 }
 
-.contact-container {
- // padding-bottom: 5em;
-}
-
 .contact-icon{
   font-size:3em;
   color: rgb(0, 102, 153);
 }
 
 .contact-item{
- // border:0.2em solid rgb(0, 102, 153);
- background:rgba(35, 35, 36, 0.65);
+  background:rgba(35, 35, 36, 0.65);
   border-radius: 0.1em;
   flex-basis: 250px;
   text-align: center;
@@ -68,23 +62,10 @@ body{
   font-weight: 800;
 }
 
-/*
-.contact-item-wrapper{
-  justify-content: space-around;
-}
-
-*/
-
 .cop-right {
   color:rgb(0, 102, 153);
   padding:2em; 
   text-align: center;
-}
-
-.fullwidth-img{
-  width:100%;
-  height:auto;
-  margin-bottom:0;  
 }
 
 .navbar-brand{
@@ -109,48 +90,32 @@ body{
   padding:5em 0;
   background-color: rgb(255,255,255); 
 }
-.project{
-  box-sizing: border-box;
-  min-height: 5em;
-  padding-bottom:1em;
-  position:relative;
-}
 
-.project-bt{
-  background-color: inherit; 
-  border: 0.1em solid rgb(0, 102, 153);
-  border-radius: 0.2em;
-}
 
-.project:hover{
-  border: 0.1em solid rgb(0, 102, 153);
-}
-
-.project-bt:hover {
-  background-color: rgb(0, 102, 153);
-}
 .project-bt-a{
+  border:2px solid rgb(68,108,180);
+  border-radius: 5px;
   display: block;
-  padding:inherit; 
+  padding:inherit;
+  width: 100px;
 }
+
 .project-bt-a:hover{
+  background-color: rgb(68,108,180);
   color:rgb(255,255,255);
 }
-.project-bt-align-left{
-  text-align: left; 
+
+.project-btn{
+  background-color: inherit;
+  color:inherit;
 }
-.project-bt-align-right{
-  text-align: right; 
-}
+
+
 .project-description{ 
   height:4em;
   line-height: 1.3em;
 }
-.project-image{
-  height: 20vw;
-  overflow: hidden; 
-  width: 100%;
-}
+
 .project-links{
   width:100%;
 }
@@ -283,12 +248,6 @@ body{
   flex-wrap: wrap-reverse
 }
 
-#stack{
- /* background-image:url("../../images/stack_background.jpeg"); 
-  background-size:  cover; 
-  background-repeat:no-repeat; 
-  background-attachment: fixed; */
-}
 
 .stack-background{
   background-image:url("../../images/stack_background.jpeg"); 
@@ -299,7 +258,6 @@ body{
 }
 
 .stack-introduction {
- /* background-color:rgba(68, 108, 180,0.8);*/
   display: flex; 
 }
 
@@ -343,16 +301,6 @@ body{
   
 }
 
-.stack-title{
-  /*background-color:rgba(132, 132, 132,0.85);*/
- /*
-  font-family: Avenir,Arial,Helvetica,sans-serif;
-  font-weight: 500;
-  padding-top:1em;
-  padding-bottom: 1em;
-  text-align: center;
-  text-align: center;*/
-}
 .stack-wrapper{
   background-color: rgb(216, 219, 222);
   color:rgb(255,255,255);
@@ -368,27 +316,20 @@ body{
   color: rgb(255,255,255);
   font-family: Avenir,Arial,Helvetica,sans-serif;
   font-size:3rem; 
-  //text-align: center !important;// need to set it as bootstrap doesn't do the job on small screen
+
 }
-/*@media (max-width:765px){
-  .container{
-    max-width: 95% !important;
-  }
-}
-*/
+
 
 
 
 @media screen and (max-width:1000px) {
 
   .contact-item{
-   // width: 300px;
+
     margin:1rem auto; 
   }
 
-  .contact-item-wrapper {
-   // flex-direction: column
-   }
+
 
    .stack-item{
      height: 50px;

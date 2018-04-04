@@ -49,21 +49,10 @@ body {
   font-size: 1rem;
   font-weight: 800; }
 
-/*
-.contact-item-wrapper{
-  justify-content: space-around;
-}
-
-*/
 .cop-right {
   color: #006699;
   padding: 2em;
   text-align: center; }
-
-.fullwidth-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0; }
 
 .navbar-brand {
   color: #3c6cb4 !important;
@@ -83,44 +72,24 @@ body {
   padding: 5em 0;
   background-color: white; }
 
-.project {
-  box-sizing: border-box;
-  min-height: 5em;
-  padding-bottom: 1em;
-  position: relative; }
-
-.project-bt {
-  background-color: inherit;
-  border: 0.1em solid #006699;
-  border-radius: 0.2em; }
-
-.project:hover {
-  border: 0.1em solid #006699; }
-
-.project-bt:hover {
-  background-color: #006699; }
-
 .project-bt-a {
+  border: 2px solid #446cb4;
+  border-radius: 5px;
   display: block;
-  padding: inherit; }
+  padding: inherit;
+  width: 100px; }
 
 .project-bt-a:hover {
+  background-color: #446cb4;
   color: white; }
 
-.project-bt-align-left {
-  text-align: left; }
-
-.project-bt-align-right {
-  text-align: right; }
+.project-btn {
+  background-color: inherit;
+  color: inherit; }
 
 .project-description {
   height: 4em;
   line-height: 1.3em; }
-
-.project-image {
-  height: 20vw;
-  overflow: hidden;
-  width: 100%; }
 
 .project-links {
   width: 100%; }
@@ -236,12 +205,6 @@ body {
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse; }
 
-#stack {
-  /* background-image:url("../../images/stack_background.jpeg"); 
-  background-size:  cover; 
-  background-repeat:no-repeat; 
-  background-attachment: fixed; */ }
-
 .stack-background {
   background-image: url(9aada194a85f5bbad2f0730bad8e3b1d.jpeg);
   background-size: cover;
@@ -250,7 +213,6 @@ body {
   min-height: 400px; }
 
 .stack-introduction {
-  /* background-color:rgba(68, 108, 180,0.8);*/
   display: flex; }
 
 .stack-introduction-text {
@@ -282,16 +244,6 @@ body {
   flex-wrap: wrap;
   padding: 5em 2em; }
 
-.stack-title {
-  /*background-color:rgba(132, 132, 132,0.85);*/
-  /*
-  font-family: Avenir,Arial,Helvetica,sans-serif;
-  font-weight: 500;
-  padding-top:1em;
-  padding-bottom: 1em;
-  text-align: center;
-  text-align: center;*/ }
-
 .stack-wrapper {
   background-color: #d8dbde;
   color: white;
@@ -305,12 +257,6 @@ body {
   font-family: Avenir,Arial,Helvetica,sans-serif;
   font-size: 3rem; }
 
-/*@media (max-width:765px){
-  .container{
-    max-width: 95% !important;
-  }
-}
-*/
 @media screen and (max-width: 1000px) {
   .contact-item {
     margin: 1rem auto; }
